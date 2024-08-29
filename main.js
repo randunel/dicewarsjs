@@ -974,8 +974,8 @@ function battle_dice(){
 		}
 		var s = spr[sn_battle].getChildByName("s"+bturn+i);
 		s.visible = true;
-		// s.x = o.vx;
-		// s.y = o.vy;
+		s.x = o.vx;
+		s.y = o.vy;
 		if( battle[bturn].usedice[i]>=battle[bturn].dmax ){
 			o.visible = false;
 			s.visible = false;
