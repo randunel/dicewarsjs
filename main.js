@@ -902,11 +902,11 @@ function start_battle(){
 			o.up = Math.random()*22;
 			o.bc = 0;
 			o.visible = false;
-			// var s = spr[sn_battle].getChildByName("s"+i+j);
+			var s = spr[sn_battle].getChildByName("s"+i+j);
 			// s.x = o.vx;
 			// s.y = o.vy;
-			// s.gotoAndStop("shadow");
-			// s.visible = false;
+			s.gotoAndStop("shadow");
+			s.visible = false;
 		}
 	}
 	spr[sn_battle].getChildByName("n0").x = 110;
