@@ -76,7 +76,7 @@ var Game = function(){
 	
 	// セルデータ (cell data)
 	this.XMAX=28;
-	this.YMAX=32;
+	this.YMAX=64;
 	this.cel_max = this.XMAX * this.YMAX;
 	this.cel = new Array(this.cel_max);
 	// 隣接セルを入れた配列 (arrangement with adjacent cells)
@@ -86,7 +86,7 @@ var Game = function(){
 		for( j=0; j<6; j++ ) this.join[i].dir[j] = this.next_cel(i,j);
 	}
 	// エリアデータ (area data)
-	this.AREA_MAX = 32;	// 最大エリア数 (maximum number of areas)
+	this.AREA_MAX = 64;	// 最大エリア数 (maximum number of areas)
 	this.adat = new Array();
 	for( i=0; i<32; i++ ) this.adat[i] = new AreaData();
 	// マップ作成時に使う (used for map creation)
