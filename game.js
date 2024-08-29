@@ -75,8 +75,8 @@ var Game = function(){
 
 	
 	// セルデータ (cell data)
-	this.XMAX=28;
-	this.YMAX=64;
+	this.XMAX=56;
+	this.YMAX=32;
 	this.cel_max = this.XMAX * this.YMAX;
 	this.cel = new Array(this.cel_max);
 	// 隣接セルを入れた配列 (arrangement with adjacent cells)
