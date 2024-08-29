@@ -75,7 +75,7 @@ var Game = function(){
 
 	
 	// セルデータ (cell data)
-	this.XMAX=56;
+	this.XMAX=50;
 	this.YMAX=32;
 	this.cel_max = this.XMAX * this.YMAX;
 	this.cel = new Array(this.cel_max);
