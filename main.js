@@ -932,6 +932,9 @@ function battle_dice(){
 	var f=false;
 	var soundflg = false;
 	f = true;
+	for( i=0; i<8; i++ ){
+		battle[bturn].fin[i] = 1
+	}
 	/*
 	for( i=0; i<8; i++ ){
 		if( battle[bturn].fin[i]>0 ) continue;
