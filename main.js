@@ -935,13 +935,13 @@ function battle_dice(){
 		if( battle[bturn].fin[i]>0 ) continue;
 		var o = spr[sn_battle].getChildByName("d"+bturn+i);
 		o.visible = true;
-		o.vx += w;
-		o.vy += h;
-		o.z += o.up;
-		o.up -= 3;
+		// o.vx += w;
+		// o.vy += h;
+		// o.z += o.up;
+		// o.up -= 3;
 		if( o.z<0 ){
 			o.z = 0;
-			o.up = 5-o.bc*3;
+			// o.up = 5-o.bc*3;
 			o.bc++;
 			if( o.bc>=2 ){
 				battle[bturn].fin[i] = 1;
@@ -965,8 +965,8 @@ function battle_dice(){
 				if( battle[bturn].usedice[i]<battle[bturn].dmax ) soundflg = true;
 			}
 		}
-		o.x = o.vx;
-		o.y = o.vy-o.z;
+		// o.x = o.vx;
+		// o.y = o.vy-o.z;
 		// o.gotoAndStop("d"+battle[bturn].arm+Math.floor(Math.random()*6));
 		if( battle[bturn].fin[i]>0 ){
 			// o.gotoAndStop("d"+battle[bturn].arm+battle[bturn].deme[i]);
@@ -974,8 +974,8 @@ function battle_dice(){
 		}
 		var s = spr[sn_battle].getChildByName("s"+bturn+i);
 		s.visible = true;
-		s.x = o.vx;
-		s.y = o.vy;
+		// s.x = o.vx;
+		// s.y = o.vy;
 		if( battle[bturn].usedice[i]>=battle[bturn].dmax ){
 			o.visible = false;
 			s.visible = false;
