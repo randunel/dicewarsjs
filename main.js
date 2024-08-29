@@ -931,6 +931,8 @@ function battle_dice(){
 	var h = (bturn==0)?6:-6;
 	var f=false;
 	var soundflg = false;
+	f = true;
+	/*
 	for( i=0; i<8; i++ ){
 		if( battle[bturn].fin[i]>0 ) continue;
 		var o = spr[sn_battle].getChildByName("d"+bturn+i);
@@ -982,6 +984,7 @@ function battle_dice(){
 		}
 		f=true;
 	}
+	*/
 	if( !f ){
 		spr[sn_battle].getChildByName("n"+bturn).visible = true;
 		spr[sn_battle].getChildByName("n"+bturn).text = ""+battle[bturn].sum;
