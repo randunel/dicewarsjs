@@ -822,7 +822,7 @@ function start_com(){
 	}
 	stage.update();
 	
-	waitcount = 1;
+	waitcount = 5;
 	timer_func = com_from;
 	click_func = null;
 	move_func = null;
@@ -836,7 +836,7 @@ function com_from(){
 	draw_areashape(sn_from,game.area_from,1);
 	stage.update();
 	
-	waitcount = 1;
+	waitcount = 5;
 	timer_func = com_to;
 }
 
@@ -931,7 +931,7 @@ function battle_dice(){
 	var h = (bturn==0)?6:-6;
 	var f=false;
 	var soundflg = false;
-	for( i=0; i<1; i++ ){
+	for( i=0; i<8; i++ ){
 		if( battle[bturn].fin[i]>0 ) continue;
 		var o = spr[sn_battle].getChildByName("d"+bturn+i);
 		o.visible = true;
@@ -987,7 +987,7 @@ function battle_dice(){
 		spr[sn_battle].getChildByName("n"+bturn).text = ""+battle[bturn].sum;
 		bturn++;
 		if( bturn>=2 ){
-			waitcount=1;
+			waitcount=15;
 			timer_func = after_battle;
 		}
 	}
