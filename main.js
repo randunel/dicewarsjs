@@ -222,15 +222,15 @@ function init() {
 	for( i=0; i<2; i++ ){
 		for( j=0; j<8; j++ ){
 			var bs = new lib.mc();
-			bs.scaleX = bs.scaleY = 0.15;
+			bs.scaleX = bs.scaleY = 0;
 			bs.name = "s"+i+j;
 			spr[sn].addChild(bs);
 		}
 		for( j=0; j<8; j++ ){
 			var bd = new lib.mc();
-			bd.scaleX = bd.scaleY = 0.15;
+			bd.scaleX = bd.scaleY = 0;
 			bd.name = "d"+i+j;
-			// spr[sn].addChild(bd);
+			spr[sn].addChild(bd);
 		}
 		var txt = new createjs.Text("37", "80px Anton", "Black")
 		txt.textBaseline = "middle";
