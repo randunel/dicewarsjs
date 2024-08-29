@@ -15,7 +15,7 @@ var stat=0;
 var game = new Game();
 
 // 表示位置 (display position)
-var org = {view_w:1600,view_h:840,cel_w:27,cel_h:18,ypos_mes:688,ypos_arm:770};	// オリジナルサイズ (original size)
+var org = {view_w:1500,view_h:840,cel_w:27,cel_h:18,ypos_mes:688,ypos_arm:770};	// オリジナルサイズ (original size)
 var nume = 1;
 var deno = 1;
 var view_w,view_h;
