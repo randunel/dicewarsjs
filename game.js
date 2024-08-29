@@ -16,7 +16,7 @@ var AreaData = function(){
 	// 周囲のライン用
 	this.line_cel = new Array(300);	// セル
 	this.line_dir = new Array(300);	// 方向(0～5)
-	this.join = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];	// 隣接フラグ32個
+	this.join = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];	// 隣接フラグ32個
 }
 
 
@@ -88,7 +88,7 @@ var Game = function(){
 	// エリアデータ (area data)
 	this.AREA_MAX = 64;	// 最大エリア数 (maximum number of areas)
 	this.adat = new Array();
-	for( i=0; i<64; i++ ) this.adat[i] = new AreaData();
+	for( i=0; i<this.AREA_MAX; i++ ) this.adat[i] = new AreaData();
 	// マップ作成時に使う (used for map creation)
 	this.num = new Array(this.cel_max);		// エリア通番 (area serial number)
 	for( i=0; i<this.cel_max; i++ ) this.num[i] = i;
