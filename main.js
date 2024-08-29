@@ -937,11 +937,11 @@ function battle_dice(){
 		o.visible = true;
 		// o.vx += w;
 		// o.vy += h;
-		// o.z += o.up;
-		// o.up -= 3;
+		o.z += o.up;
+		o.up -= 3;
 		if( o.z<0 ){
 			o.z = 0;
-			// o.up = 5-o.bc*3;
+			o.up = 5-o.bc*3;
 			o.bc++;
 			if( o.bc>=2 ){
 				battle[bturn].fin[i] = 1;
