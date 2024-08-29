@@ -965,8 +965,8 @@ function battle_dice(){
 				if( battle[bturn].usedice[i]<battle[bturn].dmax ) soundflg = true;
 			}
 		}
-		// o.x = o.vx;
-		// o.y = o.vy-o.z;
+		o.x = o.vx;
+		o.y = o.vy-o.z;
 		// o.gotoAndStop("d"+battle[bturn].arm+Math.floor(Math.random()*6));
 		if( battle[bturn].fin[i]>0 ){
 			// o.gotoAndStop("d"+battle[bturn].arm+battle[bturn].deme[i]);
