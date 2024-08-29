@@ -893,8 +893,8 @@ function start_battle(){
 		var ox = (i==0)?w*100:-w*90;
 		var oy = (i==0)?-h*50:h*60;
 		for( j=0; j<1; j++ ){
-			//var o = spr[sn_battle].getChildByName("d"+i+j);
-			var o = spr[sn_battle].getChildByName("d00");
+			var o = spr[sn_battle].getChildByName("d"+i+j);
+			//var o = spr[sn_battle].getChildByName("d00");
 			o.vx = ox + (j%3)*10*w - Math.floor(j/3)*10*w + Math.random()*r;
 			o.vy = oy + (j%3)*10*h + Math.floor(j/3)*10*h + Math.random()*r;
 			o.x = o.vx;
