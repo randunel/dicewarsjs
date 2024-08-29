@@ -935,8 +935,8 @@ function battle_dice(){
 		if( battle[bturn].fin[i]>0 ) continue;
 		var o = spr[sn_battle].getChildByName("d"+bturn+i);
 		o.visible = true;
-		// o.vx += w;
-		// o.vy += h;
+		o.vx += w;
+		o.vy += h;
 		o.z += o.up;
 		o.up -= 3;
 		if( o.z<0 ){
