@@ -213,6 +213,7 @@ function init() {
 	// バトルダイス (battle dice)
 	sn_battle = sn;
 	spr[sn] = new createjs.Container();
+	spr[sn].visible = false;
 	spr[sn].y = ypos_mes;
 	spr[sn].x = view_w/2;
 	spr[sn].scaleX = spr[sn].scaleY = nume/deno;
@@ -884,7 +885,7 @@ function start_battle(){
 			battle[i].fin[j] = false;
 		}
 	}
-	spr[sn_battle].visible = false;
+	spr[sn_battle].visible = true;
 	
 	for( i=0; i<2; i++ ){
 		var w = 4;
