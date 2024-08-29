@@ -894,19 +894,19 @@ function start_battle(){
 		var oy = (i==0)?-h*50:h*60;
 		for( j=0; j<8; j++ ){
 			var o = spr[sn_battle].getChildByName("d"+i+j);
-			o.vx = ox + (j%3)*10*w - Math.floor(j/3)*10*w + Math.random()*r;
-			o.vy = oy + (j%3)*10*h + Math.floor(j/3)*10*h + Math.random()*r;
+			o.vx = ox// + (j%3)*10*w - Math.floor(j/3)*10*w + Math.random()*r;
+			o.vy = oy// + (j%3)*10*h + Math.floor(j/3)*10*h + Math.random()*r;
 			o.x = o.vx;
 			o.y = o.vy;
 			o.z = Math.random()*10;
 			o.up = Math.random()*22;
 			o.bc = 0;
 			o.visible = false;
-			var s = spr[sn_battle].getChildByName("s"+i+j);
-			s.x = o.vx;
-			s.y = o.vy;
-			s.gotoAndStop("shadow");
-			s.visible = false;
+			// var s = spr[sn_battle].getChildByName("s"+i+j);
+			// s.x = o.vx;
+			// s.y = o.vy;
+			// s.gotoAndStop("shadow");
+			// s.visible = false;
 		}
 	}
 	spr[sn_battle].getChildByName("n0").x = 110;
