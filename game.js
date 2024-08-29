@@ -14,8 +14,8 @@ var AreaData = function(){
 	this.len_min=0;
 
 	// 周囲のライン用
-	this.line_cel = new Array(100);	// セル
-	this.line_dir = new Array(100);	// 方向(0～5)
+	this.line_cel = new Array(300);	// セル
+	this.line_dir = new Array(300);	// 方向(0～5)
 	this.join = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];	// 隣接フラグ32個
 }
 
