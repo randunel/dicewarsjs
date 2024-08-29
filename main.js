@@ -884,7 +884,7 @@ function start_battle(){
 			battle[i].fin[j] = false;
 		}
 	}
-	spr[sn_battle].visible = true;
+	spr[sn_battle].visible = false;
 	
 	for( i=0; i<2; i++ ){
 		var w = 4;
