@@ -931,11 +931,6 @@ function battle_dice(){
 	var h = (bturn==0)?6:-6;
 	var f=false;
 	var soundflg = false;
-	f = true;
-	for( i=0; i<8; i++ ){
-		battle[bturn].fin[i] = 1
-	}
-	/*
 	for( i=0; i<8; i++ ){
 		if( battle[bturn].fin[i]>0 ) continue;
 		var o = spr[sn_battle].getChildByName("d"+bturn+i);
@@ -972,9 +967,9 @@ function battle_dice(){
 		}
 		o.x = o.vx;
 		o.y = o.vy-o.z;
-		o.gotoAndStop("d"+battle[bturn].arm+Math.floor(Math.random()*6));
+		// o.gotoAndStop("d"+battle[bturn].arm+Math.floor(Math.random()*6));
 		if( battle[bturn].fin[i]>0 ){
-			o.gotoAndStop("d"+battle[bturn].arm+battle[bturn].deme[i]);
+			// o.gotoAndStop("d"+battle[bturn].arm+battle[bturn].deme[i]);
 			if( battle[bturn].usedice[i]<battle[bturn].dmax ) soundflg = true;
 		}
 		var s = spr[sn_battle].getChildByName("s"+bturn+i);
@@ -987,7 +982,6 @@ function battle_dice(){
 		}
 		f=true;
 	}
-	*/
 	if( !f ){
 		spr[sn_battle].getChildByName("n"+bturn).visible = true;
 		spr[sn_battle].getChildByName("n"+bturn).text = ""+battle[bturn].sum;
