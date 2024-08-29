@@ -213,13 +213,12 @@ function init() {
 	// バトルダイス (battle dice)
 	sn_battle = sn;
 	spr[sn] = new createjs.Container();
-	spr[sn].visible = false;
 	spr[sn].y = ypos_mes;
 	spr[sn].x = view_w/2;
 	spr[sn].scaleX = spr[sn].scaleY = nume/deno;
-	var bgshape = new createjs.Shape();
-	bgshape.graphics.beginFill("rgba(255,255,255,0.8)").drawRect(-org.view_w/2,-50,org.view_w,360);
-	spr[sn].addChild(bgshape);
+	// var bgshape = new createjs.Shape();
+	// bgshape.graphics.beginFill("rgba(255,255,255,0.8)").drawRect(-org.view_w/2,-50,org.view_w,360);
+	// spr[sn].addChild(bgshape);
 	for( i=0; i<2; i++ ){
 		for( j=0; j<8; j++ ){
 			var bs = new lib.mc();
