@@ -995,7 +995,7 @@ function battle_dice(){
 		}
 	}
 	if( soundflg ){
-		playSound("snd_dice");
+		// playSound("snd_dice");
 	}
 	stage.update();
 }
