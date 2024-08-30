@@ -902,7 +902,9 @@ function start_battle(){
 			o.z = Math.random()*10;
 			o.up = Math.random()*22;
 			o.bc = 0;
-			o.visible = false;
+			setTimeout(() => {
+				o.visible = false;
+			}, 1000)
 			// var s = spr[sn_battle].getChildByName("s"+i+j);
 			// s.x = o.vx;
 			// s.y = o.vy;
