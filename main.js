@@ -355,11 +355,11 @@ function init() {
 	
 	if( soundon ){
 		// PCの場合にはサウンド読み込む (in the case of a pc, load sound)
-		var queue = new createjs.LoadQueue(false);
-		queue.installPlugin(createjs.Sound);
-		queue.loadManifest(manifest,true);
-		queue.addEventListener("fileload",handleFileLoad);  
-		queue.addEventListener("complete",handleComplete);		
+		// var queue = new createjs.LoadQueue(false);
+		// queue.installPlugin(createjs.Sound);
+		// queue.loadManifest(manifest,true);
+		// queue.addEventListener("fileload",handleFileLoad);  
+		// queue.addEventListener("complete",handleComplete);		
 	}else{
 		waitcount = 60;
 		timer_func = fake_loading;
@@ -920,10 +920,12 @@ function start_battle(){
 	bturn = 0;
 
 	stage.update();
-	timer_func = battle_dice;
+	// timer_func = battle_dice;
 	click_func = null;
 	move_func = null;
 	releaese_func = null;
+
+	timer_func = after_battle;
 }
 
 function battle_dice(){
