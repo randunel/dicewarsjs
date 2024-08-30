@@ -902,9 +902,7 @@ function start_battle(){
 			o.z = Math.random()*10;
 			o.up = Math.random()*22;
 			o.bc = 0;
-			setTimeout(() => {
-				o.visible = false;
-			}, 1000)
+			o.visible = false;
 			// var s = spr[sn_battle].getChildByName("s"+i+j);
 			// s.x = o.vx;
 			// s.y = o.vy;
@@ -920,6 +918,11 @@ function start_battle(){
 	spr[sn_battle].getChildByName("n1").visible = false;
 	
 	bturn = 0;
+
+	spr[sn_battle].getChildByName("n0").visible = true;
+	spr[sn_battle].getChildByName("n0").text = ""+battle[0].sum;
+	spr[sn_battle].getChildByName("n1").visible = true;
+	spr[sn_battle].getChildByName("n1").text = ""+battle[1].sum;
 
 	stage.update();
 	// timer_func = battle_dice;
