@@ -365,6 +365,9 @@ function init() {
 		waitcount = 60;
 		timer_func = fake_loading;
 	}
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
 }
 
 function handleFileLoad(event){
