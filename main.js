@@ -84,10 +84,10 @@ var manifest = [
 	{"src":"./sound/clear.wav",		"id":"snd_clear"},
 	{"src":"./sound/click.wav",		"id":"snd_click"},
 	//{"src":"./sound/dice.wav",		"id":"snd_dice"},
-	{"src":"./sound/fail.wav",		"id":"snd_fail"},
+	//{"src":"./sound/fail.wav",		"id":"snd_fail"},
 	{"src":"./sound/myturn.wav",	"id":"snd_myturn"},
-	{"src":"./sound/over.wav",		"id":"snd_over"},
-	{"src":"./sound/success.wav",	"id":"snd_success"}
+	// {"src":"./sound/over.wav",		"id":"snd_over"},
+	// {"src":"./sound/success.wav",	"id":"snd_success"}
 ];
 
 // 縮尺に合わせてリサイズ
@@ -101,11 +101,11 @@ function init() {
 	var i,j,c,n;
 
 	canvas = document.getElementById("myCanvas");
-	canvas.allowTouchScrolling = true;
+	// canvas.allowTouchScrolling = true;
 	stage = new createjs.Stage(canvas);
 	
 	if(createjs.Touch.isSupported() == true) {
-	   createjs.Touch.enable(stage);
+	   // createjs.Touch.enable(stage);
 	   touchdev = true;
 	}
 //	   touchdev = true;
