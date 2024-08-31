@@ -84,10 +84,10 @@ var manifest = [
 	{"src":"./sound/clear.wav",		"id":"snd_clear"},
 	{"src":"./sound/click.wav",		"id":"snd_click"},
 	//{"src":"./sound/dice.wav",		"id":"snd_dice"},
-	//{"src":"./sound/fail.wav",		"id":"snd_fail"},
+	{"src":"./sound/fail.wav",		"id":"snd_fail"},
 	{"src":"./sound/myturn.wav",	"id":"snd_myturn"},
-	// {"src":"./sound/over.wav",		"id":"snd_over"},
-	// {"src":"./sound/success.wav",	"id":"snd_success"}
+	{"src":"./sound/over.wav",		"id":"snd_over"},
+	{"src":"./sound/success.wav",	"id":"snd_success"}
 ];
 
 // 縮尺に合わせてリサイズ
