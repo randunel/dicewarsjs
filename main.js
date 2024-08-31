@@ -86,8 +86,8 @@ var manifest = [
 	//{"src":"./sound/dice.wav",		"id":"snd_dice"},
 	{"src":"./sound/fail.wav",		"id":"snd_fail"},
 	{"src":"./sound/myturn.wav",	"id":"snd_myturn"},
-	{"src":"./sound/over.wav",		"id":"snd_over"},
-	{"src":"./sound/success.wav",	"id":"snd_success"}
+	// {"src":"./sound/over.wav",		"id":"snd_over"},
+	// {"src":"./sound/success.wav",	"id":"snd_success"}
 ];
 
 // 縮尺に合わせてリサイズ
@@ -1029,7 +1029,7 @@ function after_battle(){
 		game.adat[game.area_to].arm = arm0;
 		game.set_area_tc(arm0);
 		game.set_area_tc(arm1);
-		playSound("snd_success");
+		// playSound("snd_success");
 	}else{
 		game.adat[game.area_from].dice = 1;
 		playSound("snd_fail");
@@ -1186,7 +1186,7 @@ function gameover(){
 		var a = (-80+waitcount)/100;
 		spr[sn_gameover].getChildByName("bg").alpha=a;
 		if( a>0.8 ){
-			playSound("snd_over");
+			// playSound("snd_over");
 			waitcount=0;
 			stat++;
 		}
@@ -1348,7 +1348,7 @@ function play_history(){
 				game.adat[an1].dice = game.adat[an0].dice-1;
 				game.adat[an0].dice = 1;
 				game.adat[an1].arm = game.adat[an0].arm;
-				playSound("snd_success");
+				// playSound("snd_success");
 			}else{
 				game.adat[an0].dice = 1;
 				playSound("snd_fail");
