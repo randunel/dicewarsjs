@@ -101,6 +101,7 @@ function init() {
 	var i,j,c,n;
 
 	canvas = document.getElementById("myCanvas");
+	canvas.allowTouchScrolling = true;
 	stage = new createjs.Stage(canvas);
 	
 	if(createjs.Touch.isSupported() == true) {
